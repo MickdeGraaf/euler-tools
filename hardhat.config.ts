@@ -62,6 +62,9 @@ const config: HardhatUserConfig = {
       },
       chainId: chainIds.hardhat,
     },
+    local: {
+      url: "http://localhost:8545",
+    },
     goerli: getChainConfig("goerli"),
     kovan: getChainConfig("kovan"),
     rinkeby: getChainConfig("rinkeby"),
